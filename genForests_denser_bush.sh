@@ -9,7 +9,7 @@ then
 fi
 
 echo "generating worlds"
-python3 genWorlds.py --num_worlds $1 --world_length $2 --tree_density $3 --high_res 0
+python3 genWorlds_denser_bush.py --num_worlds $1 --world_length $2 --tree_density $3 --high_res 0
 
 exit
 

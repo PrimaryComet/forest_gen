@@ -167,25 +167,33 @@ class World:
     id_num = len(self.trees)
     x = random.uniform(-self.world_length/2, self.world_length/2)
     y = random.uniform(-self.world_length/2, self.world_length/2)
-    
-    x_nono_min = -self.world_length * 0.1
-    x_nono_max = self.world_length * 0.1
-    y_nono_min = -self.world_length * 0.1
-    y_nono_max = self.world_length * 0.1
-    
-    while x >= x_nono_min and x <= x_nono_max and y >= y_nono_min and y <= y_nono_max:
-      x = random.uniform(-self.world_length/2, self.world_length/2)
-      y = random.uniform(-self.world_length/2, self.world_length/2)
-    
     angle = random.uniform(0, 2*math.pi)
     scale = random.uniform(0.3, 1)
     mesh_num = random.randint(1, self.TOTAL_NUM_MESHES)
 
     return Tree(id_num, [x,y,0,0,0,angle], scale, mesh_num)
 
+  def _gen_random_tree_local(self, x, y, local_length):
+    id_num = len(self.trees)
+    x_new = random.uniform(x - local_length / 2, x + local_length / 2)
+    y_new = random.uniform(y - local_length / 2, y + local_length / 2)
+    angle = random.uniform(0, 2 * math.pi)
+    scale = random.uniform(0.3, 1)
+    mesh_num = random.randint(1, self.TOTAL_NUM_MESHES)
+
+    return Tree(id_num, [x_new, y_new, 0, 0, 0, angle], scale, mesh_num)
+
   def add_trees(self, num_trees):
     for i in range(num_trees):
       self.trees.append(self._gen_random_tree())
+
+  def densify(self):
+    local_length = self.world_length * 0.1
+    num_trees = len(self.trees)
+    for i in range(num_trees):
+      x = self.trees[i].pose[0]
+      y = self.trees[i].pose[1]
+      self.trees.append(self._gen_random_tree_local(x, y, local_length))
 
   def save_world(self, filename):
 
@@ -205,6 +213,7 @@ def gen_worlds(save_path, num_worlds, world_length, num_trees, use_high_res):
   for i in range(num_worlds):
     world = World(world_length, use_high_res)
     world.add_trees(num_trees)
+    world.densify()
     world.save_world(save_path + '/forest' + str(i) + '.world')
 
 if __name__ == "__main__":

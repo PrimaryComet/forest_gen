@@ -11,6 +11,20 @@ class Tree:
     self.pose = pose_in
     self.scale = scale_in
     self.mesh_num = mesh_num_in
+    
+class Rock:
+  def __init__(self, id_in, pose_in, scale_in, mesh_num_in):
+    self.id = 'rock' + str(id_in)
+    self.pose = pose_in
+    self.scale = scale_in
+    self.mesh_num = mesh_num_in
+    
+class Bush:
+  def __init__(self, id_in, pose_in, scale_in, mesh_num_in):
+    self.id = 'bush' + str(id_in)
+    self.pose = pose_in
+    self.scale = scale_in
+    self.mesh_num = mesh_num_in
 
 class GenXML:
   def __init__(self):
@@ -64,7 +78,14 @@ class GenXML:
     geometry_el = etree.Element('geometry')
     mesh_el = etree.Element('mesh')
     uri_el = etree.Element('uri')
-    uri_el.text = 'file://' + models_type + '/Tree' + str(mesh_num_in) + '.dae'
+    if 'tree' in name_in:
+	    uri_el.text = 'file://' + models_type + '/Tree' + str(mesh_num_in) + '.dae'
+    elif 'rock' in name_in:
+	    uri_el.text = 'file://' + models_type + '/Rock' + str(mesh_num_in) + '.dae'
+    elif 'bush' in name_in:
+	    uri_el.text = 'file://' + models_type + '/Bush' + str(mesh_num_in) + '.dae'
+    else:
+    	print("Error")
     mesh_el.append(uri_el)
     scale_el = etree.Element('scale')
     scale_el.text = str(scale_in) + ' ' + str(scale_in) + ' ' + str(scale_in)
@@ -153,10 +174,14 @@ class GenXML:
 
 class World:
   TOTAL_NUM_MESHES = 6
+  TOTAL_NUM_ROCKS = 2
+  TOTAL_NUM_BUSHES = 1
 
   def __init__(self, world_length, use_high_res):
     self.world_length = world_length
     self.trees = []
+    self.rocks = []
+    self.bushes = []
 
     if(use_high_res):
       self.models_type = 'models_high_res'
@@ -167,25 +192,109 @@ class World:
     id_num = len(self.trees)
     x = random.uniform(-self.world_length/2, self.world_length/2)
     y = random.uniform(-self.world_length/2, self.world_length/2)
-    
-    x_nono_min = -self.world_length * 0.1
-    x_nono_max = self.world_length * 0.1
-    y_nono_min = -self.world_length * 0.1
-    y_nono_max = self.world_length * 0.1
-    
+
+    x_nono_min = -3.0 #self.world_length * 0.1
+    x_nono_max = 3.0 #self.world_length * 0.1
+    y_nono_min = -3.0 #self.world_length * 0.1
+    y_nono_max = 3.0 #self.world_length * 0.1
+
     while x >= x_nono_min and x <= x_nono_max and y >= y_nono_min and y <= y_nono_max:
       x = random.uniform(-self.world_length/2, self.world_length/2)
       y = random.uniform(-self.world_length/2, self.world_length/2)
-    
+
     angle = random.uniform(0, 2*math.pi)
     scale = random.uniform(0.3, 1)
     mesh_num = random.randint(1, self.TOTAL_NUM_MESHES)
 
     return Tree(id_num, [x,y,0,0,0,angle], scale, mesh_num)
 
+  def _gen_random_rock(self):
+    id_num = len(self.rocks)
+    x = random.uniform(-self.world_length/2, self.world_length/2)
+    y = random.uniform(-self.world_length/2, self.world_length/2)
+    z = random.uniform(0.1, 0.8)
+
+    x_nono_min = -3.0 #self.world_length * 0.1
+    x_nono_max = 3.0 #self.world_length * 0.1
+    y_nono_min = -3.0 #self.world_length * 0.1
+    y_nono_max = 3.0 #self.world_length * 0.1
+
+    while x >= x_nono_min and x <= x_nono_max and y >= y_nono_min and y <= y_nono_max:
+      x = random.uniform(-self.world_length/2, self.world_length/2)
+      y = random.uniform(-self.world_length/2, self.world_length/2)
+
+    angle = random.uniform(0, 2*math.pi)
+    scale = random.uniform(0.3, 1)
+    mesh_num = random.randint(1, self.TOTAL_NUM_MESHES)
+
+    return Rock(id_num, [x,y,z,0,0,angle], scale, mesh_num)
+
+  def _gen_random_bush(self):
+    id_num = len(self.rocks)
+    x = random.uniform(-self.world_length/2, self.world_length/2)
+    y = random.uniform(-self.world_length/2, self.world_length/2)
+    z = random.uniform(0.1, 0.8)
+
+    x_nono_min = -3.0 #self.world_length * 0.1
+    x_nono_max = 3.0 #self.world_length * 0.1
+    y_nono_min = -3.0 #self.world_length * 0.1
+    y_nono_max = 3.0 #self.world_length * 0.1
+
+    while x >= x_nono_min and x <= x_nono_max and y >= y_nono_min and y <= y_nono_max:
+      x = random.uniform(-self.world_length/2, self.world_length/2)
+      y = random.uniform(-self.world_length/2, self.world_length/2)
+
+    angle = random.uniform(0, 2*math.pi)
+    scale = random.uniform(0.3, 1)
+    mesh_num = random.randint(1, self.TOTAL_NUM_MESHES)
+
+    return Bush(id_num, [x,y,z,0,0,angle], scale, mesh_num)
+
+  def _gen_random_tree_local(self, x, y, scale, local_length):
+    id_num = len(self.trees)
+    x_new = random.uniform(x - local_length / 2, x + local_length / 2)
+    y_new = random.uniform(y - local_length / 2, y + local_length / 2)
+    angle = random.uniform(0, 2 * math.pi)
+    scale_small = 0.75 * scale
+    mesh_num = random.randint(1, self.TOTAL_NUM_MESHES)
+
+    return Tree(id_num, [x_new, y_new, 0, 0, 0, angle], scale_small, mesh_num)
+
+  def _gen_random_rock_local(self, x, y, local_length):
+    id_num = len(self.trees)
+    x_new = random.uniform(x - local_length / 2, x + local_length / 2)
+    y_new = random.uniform(y - local_length / 2, y + local_length / 2)
+    angle = random.uniform(0, 2 * math.pi)
+    mesh_num = random.randint(1, self.TOTAL_NUM_ROCKS)
+    scale = 0.5
+
+    return Rock(id_num, [x_new, y_new, 0, 0, 0, angle], scale, mesh_num)
+
+  def _gen_random_bush_local(self, x, y, local_length):
+    id_num = len(self.trees)
+    x_new = random.uniform(x - local_length / 2, x + local_length / 2)
+    y_new = random.uniform(y - local_length / 2, y + local_length / 2)
+    angle = random.uniform(0, 2 * math.pi)
+    scale = 0.3
+    mesh_num = random.randint(1, self.TOTAL_NUM_BUSHES)
+
+    return Bush(id_num, [x_new, y_new, 0, 0, 0, angle], scale, mesh_num)
+
   def add_trees(self, num_trees):
     for i in range(num_trees):
       self.trees.append(self._gen_random_tree())
+
+  def densify(self):
+    local_length = 2.0
+    num_trees = len(self.trees)
+    for i in range(num_trees):
+      x = self.trees[i].pose[0]
+      y = self.trees[i].pose[1]
+      scale = self.trees[i].scale
+      for _ in range(2):
+        self.rocks.append(self._gen_random_rock_local(x, y, local_length))
+      for _ in range(3):
+        self.bushes.append(self._gen_random_bush_local(x, y, local_length))
 
   def save_world(self, filename):
 
@@ -196,6 +305,18 @@ class World:
                     tree.scale,
                     tree.mesh_num,
                     self.models_type)
+    for rock in self.rocks:
+      xml.add_model(rock.id,
+                    rock.pose,
+                    rock.scale,
+                    rock.mesh_num,
+                    self.models_type)
+    for bush in self.bushes:
+      xml.add_model(bush.id,
+                    bush.pose,
+                    bush.scale,
+                    bush.mesh_num,
+                    self.models_type)
 
     text_file = open(filename, "w")
     text_file.write(xml.output_xml())
@@ -205,6 +326,7 @@ def gen_worlds(save_path, num_worlds, world_length, num_trees, use_high_res):
   for i in range(num_worlds):
     world = World(world_length, use_high_res)
     world.add_trees(num_trees)
+    world.densify()
     world.save_world(save_path + '/forest' + str(i) + '.world')
 
 if __name__ == "__main__":
