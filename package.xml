@@ -12,11 +12,12 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <buildtool_depend>catkin_simple</buildtool_depend>
-
+  <exec_depend>gazebo_ros</exec_depend> 
   <export>
     <gazebo_ros gazebo_model_path="${prefix}/models_high_res"/>
     <gazebo_ros gazebo_media_path="${prefix}/models_high_res"/>
     <gazebo_ros gazebo_model_path="${prefix}/models_low_res"/>
     <gazebo_ros gazebo_media_path="${prefix}/models_low_res"/>
+
 </export>
 </package>
