@@ -1,0 +1,1128 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="default">
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+    <model name="forest">
+      <static>true</static>
+      <link name="tree0">
+        <pose>1.0676397977772432 -4.0649226005537065 0 0 0 4.3293204428635645 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.1390947706764279</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.1390947706764279</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree1">
+        <pose>-1.3353886836608275 6.190046175867192 0 0 0 0.11854322886683448 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.10917730415457214</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.10917730415457214</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree2">
+        <pose>1.7724464651589997 -7.575048167459107 0 0 0 5.805906843155453 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.1803542242935254</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.1803542242935254</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree3">
+        <pose>-1.943190245797382 2.312083027797957 0 0 0 4.209870748582904 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.12136070175245092</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.12136070175245092</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree4">
+        <pose>7.392142331415073 -0.7931054189066185 0 0 0 4.750340840856281 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.16230285978351758</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.16230285978351758</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree5">
+        <pose>6.6066170495504934 1.883329670604379 0 0 0 5.4322875826658885 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.13276218549529772</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.13276218549529772</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree6">
+        <pose>9.603466312039455 8.65728294930895 0 0 0 2.4613955537194325 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.13076442687163878</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.13076442687163878</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree7">
+        <pose>-4.794713224352152 4.118203571643917 0 0 0 5.8666481593648525 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.1130931525094739</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.1130931525094739</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree8">
+        <pose>8.48993300161332 5.679563916067604 0 0 0 4.812505253503849 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.11666771922300535</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.11666771922300535</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree9">
+        <pose>3.1240068321286802 6.462640846227362 0 0 0 2.1179575849713084 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.17761848979338393</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.17761848979338393</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree10">
+        <pose>-0.48991035671259553 9.938655253454968 0 0 0 3.555778813426028 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.1952764185341375</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.1952764185341375</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree11">
+        <pose>8.469087855625329 -1.28730281231298 0 0 0 2.86732465135089 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.143758371105327</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.143758371105327</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree12">
+        <pose>2.2653819832709665 8.188525339835582 0 0 0 2.7401864888075456 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.15475974911783147</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.15475974911783147</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree13">
+        <pose>-3.9101490469022053 2.777522782800075 0 0 0 4.224507705683801 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.13909257654537618</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.13909257654537618</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree14">
+        <pose>-3.704158687442469 9.62973929414354 0 0 0 2.430695552250994 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.15726085101986464</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.15726085101986464</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree15">
+        <pose>-5.260432512724642 8.830384428922194 0 0 0 2.8840922427307976 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.18014517833482224</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.18014517833482224</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree16">
+        <pose>-3.1914281162666818 9.64446390289348 0 0 0 4.024066841535437 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.17113581150579948</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.17113581150579948</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree17">
+        <pose>1.6960687613411665 -2.405668883451546 0 0 0 3.281503779770711 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.19960180549194304</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.19960180549194304</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree18">
+        <pose>3.710021909198387 -5.310643599751865 0 0 0 2.495962858246607 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.17520544245845057</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.17520544245845057</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree19">
+        <pose>-7.216066686523357 6.635494708293493 0 0 0 6.168690601348569 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.1290131436123626</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.1290131436123626</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree20">
+        <pose>-5.833368682203113 -0.7563560245411427 0 0 0 2.9054202051190465 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.1414031117434203</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.1414031117434203</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree21">
+        <pose>4.969921886043103 2.565093738629905 0 0 0 1.2047220389295317 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.15671144961831363</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.15671144961831363</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree22">
+        <pose>-2.977809106790832 4.941309793399611 0 0 0 1.5365206017086825 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.1548702883487692</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.1548702883487692</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree23">
+        <pose>2.518174099853134 0.4073665950980079 0 0 0 0.49902338910639255 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.15096343991082492</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.15096343991082492</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree24">
+        <pose>-9.082027576896667 -3.9469545534499906 0 0 0 5.8660874587721175 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.15724842700489414</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.15724842700489414</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree25">
+        <pose>7.885567138716375 -9.207874096548476 0 0 0 2.536633275661478 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.1391715927452299</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.1391715927452299</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree26">
+        <pose>-3.3321727367504517 9.103109518374232 0 0 0 1.1315968360668331 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.15886486701332414</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.15886486701332414</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree27">
+        <pose>2.0041105478124184 -6.3975821537858195 0 0 0 6.246708898467513 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.1921941082474648</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.1921941082474648</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree28">
+        <pose>7.566799177072777 -3.4809768276228663 0 0 0 4.839693033497563 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.12574695982859443</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.12574695982859443</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree29">
+        <pose>3.291763986747643 -2.1895854028349166 0 0 0 6.2484986256405115 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.17508653008819078</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.17508653008819078</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree30">
+        <pose>3.4390485238843116 -2.7885949626449724 0 0 0 4.19064196648128 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.10021955497823108</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.10021955497823108</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree31">
+        <pose>3.6241559695036827 -4.960096456445033 0 0 0 5.702670152803099 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.19527047150894786</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.19527047150894786</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree32">
+        <pose>-1.316947304226641 2.489082341345801 0 0 0 3.2590974758476023 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.18647143572453923</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.18647143572453923</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree33">
+        <pose>-7.9048371918745985 1.2775892591149116 0 0 0 0.632286214358194 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.12276138027764784</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.12276138027764784</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree34">
+        <pose>-8.797969532996941 1.0107545144918966 0 0 0 0.8534258375751588 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.19119668674420634</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.19119668674420634</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree35">
+        <pose>-8.137411663749742 -4.863050483391385 0 0 0 5.906846829142296 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.16939980525282897</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.16939980525282897</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree36">
+        <pose>6.1340890401682415 -0.22884184634427207 0 0 0 3.673314241005206 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.16394642494675848</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.16394642494675848</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree37">
+        <pose>-6.879753007618639 8.741154930130357 0 0 0 1.5368918229625506 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.14498491635115485</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.14498491635115485</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree38">
+        <pose>7.596130433864573 -3.692235743137024 0 0 0 4.369862331360848 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.11279496406927059</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.11279496406927059</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+      <link name="tree39">
+        <pose>4.33474444131468 0.17384739951583228 0 0 0 4.981268053257665 </pose>
+        <visual name="visual">
+          <material>
+            <script>
+              <uri>model://tree_simple/scripts</uri>
+              <uri>model://tree_simple/materials/textures</uri>
+            </script>
+          </material>
+          <geometry>
+            <cylinder>
+              <radius>0.13658471940620073</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.13658471940620073</radius>
+              <length>10</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>0</max_contacts>
+        </collision>
+      </link>
+    </model>
+    <!-- Plugins -->
+    <plugin name="mrs_gazebo_link_attacher_plugin" filename="libMrsGazeboCommonResources_StaticTransformRepublisher.so"/>
+    <plugin name="mrs_gazebo_rviz_cam_synchronizer" filename="libMrsGazeboCommonResources_RvizCameraSynchronizer.so"/>
+    <!-- Physics -->
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+      <gravity>0 0 -9.8066</gravity>
+      <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>10</iters>
+          <sor>1.3</sor>
+          <use_dynamic_moi_rescaling>0</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>1000</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+    <!-- Coordinate System -->
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>47.397743</latitude_deg>
+      <longitude_deg>8.545594</longitude_deg>
+      <elevation>0.0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <!-- Ground Plane -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <plane>
+              <normal>0 0 1<size>250 250</size></normal>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1</mu>
+                <mu2>1</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="grass">
+          <pose>0 0 0 0 0 0</pose>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>/opt/ros/noetic/share/mrs_gazebo_common_resources/models/grass_plane/meshes/grass_plane.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <!-- Sun -->
+    <light name="sun" type="directional">
+      <pose frame="">0 0 1000 0.4 0.2 0</pose>
+      <specular>0.6 0.6 0.6 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+    </light>
+  </world>
+</sdf>
